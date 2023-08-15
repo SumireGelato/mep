@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="cover.css">
+  <title>Mep Button</title>
+</head>
+
+<body class="w3-indigo">
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white w3-center">
+    <div class="w3-display-middle">
+      <h1>Click for Meps</h1>
+      <audio src="sounds/MEP.mp3" id="mep"></audio>
+      <button id="mepButton" type="button" class="w3-btn w3-round-xxlarge w3-blue">MEP</button>
+      <script>
+        document.getElementById("mepButton").addEventListener("click", function () {
+          document.getElementById("mep").play();
+        });
+      </script>
+      <audio src="sounds/MEP2.mp3" id="mep2"></audio>
+      <button id="mep2Button" type="button" class="w3-btn w3-round-xxlarge w3-blue">MEP2</button>
+      <script>
+        document.getElementById("mep2Button").addEventListener("click", function () {
+          document.getElementById("mep2").play();
+        });
+      </script>
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    </div>
+  </div>
+</body>
+
+</html>
